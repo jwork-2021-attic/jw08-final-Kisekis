@@ -1,0 +1,21 @@
+
+
+apply plugin: "java-library"
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+dependencies {
+    api "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
+}
+
+sourceSets {
+	test {
+        java {
+            srcDir 'src'
+        }
+    }
+    
+    
+}
+
+
